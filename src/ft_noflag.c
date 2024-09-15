@@ -6,7 +6,7 @@
 /*   By: antonmar <antonmar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/16 12:25:24 by antonmar          #+#    #+#             */
-/*   Updated: 2021/03/19 16:20:51 by antonmar         ###   ########.fr       */
+/*   Updated: 2024/09/15 17:03:07 by antonio-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,10 +28,8 @@ int	print_nopoint_arg(struct s_text_stats stats, int num_char)
 
 int	print_nopoint(struct s_text_stats stats, int spaces)
 {
-	char	c;
 	int		num_char;
 
-	c = ' ';
 	num_char = 0;
 	if (!stats.arg)
 	{

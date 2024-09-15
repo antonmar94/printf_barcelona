@@ -6,7 +6,7 @@
 /*   By: antonmar <antonmar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/16 12:04:45 by antonmar          #+#    #+#             */
-/*   Updated: 2021/03/19 16:33:41 by antonmar         ###   ########.fr       */
+/*   Updated: 2024/09/15 17:04:24 by antonio-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,13 +36,11 @@ int	check_astpointast(char *text)
 int	num_ast(char *text)
 {
 	int		amount;
-	int		num;
 	char	type;
 
 	amount = 0;
-	num = 0;
 	type = find_type(text);
-	while (*text != type && type && text != '\0')
+	while (*text != type && type && *text != '\0')
 	{
 		if (*text == '*')
 			amount++;

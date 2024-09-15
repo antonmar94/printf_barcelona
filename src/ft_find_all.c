@@ -6,7 +6,7 @@
 /*   By: antonmar <antonmar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/16 12:17:19 by antonmar          #+#    #+#             */
-/*   Updated: 2021/03/16 13:41:41 by antonmar         ###   ########.fr       */
+/*   Updated: 2024/09/15 17:02:37 by antonio-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,9 +67,7 @@ char	find_flag(char *text)
 int	find_this_flag(char *text, char flag)
 {
 	char	*aux;
-	char	type;
 
-	type = find_type(text);
 	aux = text;
 	while (find_flag(aux) || (*aux >= 48 && *aux < 58))
 	{
