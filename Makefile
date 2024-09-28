@@ -3,43 +3,45 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: antonmar <antonmar@student.42.fr>          +#+  +:+       +#+         #
+#    By: antonio- <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2020/12/08 11:53:40 by antonmar          #+#    #+#              #
-#    Updated: 2021/02/09 13:26:35 by antonmar         ###   ########.fr        #
+#    Created: 2024/09/28 13:07:04 by antonio-          #+#    #+#              #
+#    Updated: 2024/09/28 13:26:08 by antonio-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
+SRCDIR = src
+HEADERDIR = includes
+SRC = $(wildcard $(SRCDIR)/*.c)
+SRC_BONUS = 
+HEADER = $(wildcard $(HEADERDIR)/*.h)
+CC = cc
+FLAGS = -Wall -Wextra -Werror
 NAME = libftprintf.a
-SONAME = printf.so
-CC = gcc
-FLAGS = -Wall -Wextra -Werror -I./ -c
-FILES = src/*.c
-
-FILES_BONUS = 
-OBJ = $(FILES:src/%.c=%.o)
-
-OBJ_BONUS = $(FILES_BONUS:src/%.c=%.o)
-
-$(NAME): $(OBJ)
-		ar rcs $(NAME) $(OBJ)
-
-$(OBJ): $(FILES)
-		gcc $(FLAGS) $(FILES)
+MAKENAME = Makefile
+OBJ = $(SRC:.c=.o)
+OBJ_BONUS = $(SRC_BONUS:.c=.o)
 
 all: $(NAME)
 
+$(NAME): $(OBJ)
+	ar rcs $@ $^
+
+%.o: %.c $(HEADER) $(MAKENAME)
+	$(CC) $(FLAGS) -c $< -o $@
+
+bonus: .$(NAME).bonus
+
+.$(NAME).bonus: $(OBJ_BONUS)
+	ar rcs $(NAME) $?
+	touch $@
+
 clean:
-		rm -f $(OBJ)
-		rm -f $(OBJ_BONUS)
+	@rm -f $(OBJ) $(OBJ_BONUS)
+
 fclean: clean
-		rm -f $(NAME)
-		rm -f $(SONAME)
-re: fclean all
+	@rm -f $(NAME) .$(NAME).bonus $(OBJ) $(OBJ_BONUS)
 
-so:		
-		gcc -shared -o $(SONAME) -fPIC $(FILES) $(FILES_BONUS)
-bonus:	$(OBJ) $(OBJ_BONUS)
-		ar rcs $(NAME) $(NAME_BONUS) $(OBJ) $(OBJ_BONUS) 
+re: fclean all bonus
 
-.PHONY: all clean fclean re so bonus
+.PHONY: all bonus clean fclean re
