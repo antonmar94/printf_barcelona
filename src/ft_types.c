@@ -3,16 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_types.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: antonmar <antonmar@student.42.fr>          +#+  +:+       +#+        */
+/*   By: antonio- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/03/16 11:55:46 by antonmar          #+#    #+#             */
-/*   Updated: 2021/03/19 16:34:04 by antonmar         ###   ########.fr       */
+/*   Created: 2024/09/28 13:32:59 by antonio-          #+#    #+#             */
+/*   Updated: 2024/09/28 13:38:57 by antonio-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft_printf.h"
 #include "../includes/ft_printf_utils.h"
-#include <stdio.h>
 
 char	*justchar(char c)
 {
@@ -41,7 +40,7 @@ char	*allchar(char *arg)
 	return (str);
 }
 
-void	point_hex(int	cut, unsigned long arg, char *str)
+void	point_hex(int cut, unsigned long arg, char *str)
 {
 	int	checksize;
 

@@ -3,14 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf_utils3.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: antonmar <antonmar@student.42.fr>          +#+  +:+       +#+        */
+/*   By: antonio- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/03/15 17:40:22 by antonmar          #+#    #+#             */
-/*   Updated: 2021/03/18 19:40:58 by antonmar         ###   ########.fr       */
+/*   Created: 2024/09/28 13:31:56 by antonio-          #+#    #+#             */
+/*   Updated: 2024/09/28 13:32:02 by antonio-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "stdio.h"
 #include "../includes/ft_printf.h"
 #include "../includes/ft_printf_utils.h"
 

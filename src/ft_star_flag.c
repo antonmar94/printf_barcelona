@@ -3,16 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_star_flag.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: antonmar <antonmar@student.42.fr>          +#+  +:+       +#+        */
+/*   By: antonio- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/03/16 12:04:45 by antonmar          #+#    #+#             */
-/*   Updated: 2024/09/15 17:04:24 by antonio-         ###   ########.fr       */
+/*   Created: 2024/09/28 13:32:44 by antonio-          #+#    #+#             */
+/*   Updated: 2024/09/28 13:32:45 by antonio-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft_printf.h"
 #include "../includes/ft_printf_utils.h"
-#include <stdio.h>
 
 int	check_astpointast(char *text)
 {

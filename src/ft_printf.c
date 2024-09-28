@@ -3,18 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: antonmar <antonmar@student.42.fr>          +#+  +:+       +#+        */
+/*   By: antonio- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/12/08 13:30:44 by antonmar          #+#    #+#             */
-/*   Updated: 2021/03/19 16:29:01 by antonmar         ###   ########.fr       */
+/*   Created: 2024/09/28 13:31:00 by antonio-          #+#    #+#             */
+/*   Updated: 2024/09/28 13:38:05 by antonio-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft_printf.h"
 #include "../includes/ft_printf_utils.h"
-#include <stdio.h>
 
-char	*check_type (char type, char *text, va_list args)
+char	*check_type(char type, char *text, va_list args)
 {
 	char	*arg;
 

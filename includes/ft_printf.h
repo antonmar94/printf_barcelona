@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: antonmar <antonmar@student.42.fr>          +#+  +:+       +#+        */
+/*   By: antonio- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/12/08 12:15:53 by antonmar          #+#    #+#             */
-/*   Updated: 2024/09/28 13:26:53 by antonio-         ###   ########.fr       */
+/*   Created: 2024/09/28 13:33:32 by antonio-          #+#    #+#             */
+/*   Updated: 2024/09/28 13:47:14 by antonio-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
-
 # define FT_PRINTF_H
 
 # include <unistd.h>
@@ -38,7 +37,7 @@ char	*allpointer(char *text, unsigned long arg);
 char	*allchar(char *arg);
 char	*allint(char *text, int arg);
 int		num_spaces(char *text);
-int		check_varspaces (char *text, int var_spaces);
+int		check_varspaces(char *text, int var_spaces);
 int		real_spaces(int num_spaces, int adjust);
 int		print_spaces(struct s_text_stats stats, int num_spaces, int cut_num);
 int		num_cut(char *text);
@@ -49,7 +48,6 @@ int		print_noast(struct s_text_stats stats);
 int		print_nopoint(struct s_text_stats stats, int spaces);
 int		print_point(struct s_text_stats stats, int cut_num, int num_spaces);
 int		ft_printf(const char *head, ...);
-int		print_diuxX(struct s_text_stats stats, int num_char, int cut_num);
 int		astpoint_flag(struct s_text_stats stats);
 
 #endif

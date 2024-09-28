@@ -3,16 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_noflag.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: antonmar <antonmar@student.42.fr>          +#+  +:+       +#+        */
+/*   By: antonio- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/03/16 12:25:24 by antonmar          #+#    #+#             */
-/*   Updated: 2024/09/15 17:03:07 by antonio-         ###   ########.fr       */
+/*   Created: 2024/09/28 13:30:21 by antonio-          #+#    #+#             */
+/*   Updated: 2024/09/28 13:30:26 by antonio-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft_printf.h"
 #include "../includes/ft_printf_utils.h"
-#include <stdio.h>
 
 int	print_nopoint_arg(struct s_text_stats stats, int num_char)
 {

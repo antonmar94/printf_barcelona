@@ -3,16 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_spaces.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: antonmar <antonmar@student.42.fr>          +#+  +:+       +#+        */
+/*   By: antonio- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/03/16 12:11:03 by antonmar          #+#    #+#             */
-/*   Updated: 2021/03/19 16:45:44 by antonmar         ###   ########.fr       */
+/*   Created: 2024/09/28 13:32:26 by antonio-          #+#    #+#             */
+/*   Updated: 2024/09/28 13:38:21 by antonio-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft_printf.h"
 #include "../includes/ft_printf_utils.h"
-#include <stdio.h>
 
 int	num_spaces(char *text)
 {
@@ -40,7 +39,7 @@ int	num_spaces(char *text)
 	return (num);
 }
 
-int	check_varspaces (char *text, int var_spaces)
+int	check_varspaces(char *text, int var_spaces)
 {
 	if (find_this_flag(text, '-'))
 	{

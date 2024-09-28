@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf_utils.h                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: antonmar <antonmar@student.42.fr>          +#+  +:+       +#+        */
+/*   By: antonio- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/01/21 18:00:54 by antonmar          #+#    #+#             */
-/*   Updated: 2021/03/16 13:57:06 by antonmar         ###   ########.fr       */
+/*   Created: 2024/09/28 13:33:48 by antonio-          #+#    #+#             */
+/*   Updated: 2024/09/28 13:33:55 by antonio-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_UTILS_H
-
 # define FT_PRINTF_UTILS_H
 
 # include <unistd.h>

@@ -3,16 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_find_all.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: antonmar <antonmar@student.42.fr>          +#+  +:+       +#+        */
+/*   By: antonio- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/03/16 12:17:19 by antonmar          #+#    #+#             */
-/*   Updated: 2024/09/15 17:02:37 by antonio-         ###   ########.fr       */
+/*   Created: 2024/09/28 13:30:03 by antonio-          #+#    #+#             */
+/*   Updated: 2024/09/28 13:30:06 by antonio-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft_printf.h"
 #include "../includes/ft_printf_utils.h"
-#include <stdio.h>
 
 char	find_type(char *text)
 {

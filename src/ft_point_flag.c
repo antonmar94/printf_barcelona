@@ -3,16 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_point_flag.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: antonmar <antonmar@student.42.fr>          +#+  +:+       +#+        */
+/*   By: antonio- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/03/16 12:00:11 by antonmar          #+#    #+#             */
-/*   Updated: 2021/03/19 16:23:42 by antonmar         ###   ########.fr       */
+/*   Created: 2024/09/28 13:30:38 by antonio-          #+#    #+#             */
+/*   Updated: 2024/09/28 13:39:26 by antonio-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft_printf.h"
 #include "../includes/ft_printf_utils.h"
-#include <stdio.h>
 
 int	num_cut(char *text)
 {
@@ -31,7 +30,7 @@ int	num_cut(char *text)
 	return (num);
 }
 
-int	print_diuxX(struct s_text_stats stats, int num_char, int cut_num)
+int	print_diux(struct s_text_stats stats, int num_char, int cut_num)
 {
 	if (*stats.arg == '0')
 		stats.arg = "\0";
@@ -54,11 +53,11 @@ int	print_diuxX(struct s_text_stats stats, int num_char, int cut_num)
 	return (num_char);
 }
 
-int	print_point_arg (struct s_text_stats stats, int num_char, int cut_num)
+int	print_point_arg(struct s_text_stats stats, int num_char, int cut_num)
 {
 	if (stats.type == 'd' || stats.type == 'i' || stats.type == 'u'
 		|| stats.type == 'x' || stats.type == 'X')
-		num_char = print_diuxX(stats, num_char, cut_num);
+		num_char = print_diux(stats, num_char, cut_num);
 	if (find_type(stats.text) == 'c')
 	{
 		num_char++;
@@ -119,7 +118,7 @@ int	print_point(struct s_text_stats stats, int cut_num, int num_spaces)
 	{
 		cut_num = ft_strlen(stats.arg);
 		if (ft_atoi(stats.arg) < 0 && (stats.type == 'i'
-					|| stats.type == 'd'))
+				|| stats.type == 'd'))
 			cut_num--;
 	}
 	num_spaces = point_spaces(stats, cut_num, num_spaces);
